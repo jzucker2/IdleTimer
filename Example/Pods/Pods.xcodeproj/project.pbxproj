@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		3B05FC60741E3282B73CFD83F8CFDDBB /* Pods-IdleTimer_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D2024178F83EE1A4EA788B8C03670DC8 /* Pods-IdleTimer_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		44564098663CFF59540E5B6EB1797F6E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		513FD8921E39D03D00ADEC31 /* IdleTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513FD8911E39D03D00ADEC31 /* IdleTimer.swift */; };
 		653E5EC9833A840275D6568C64E3585E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		81DF8D3910212CE80B75F35D15428779 /* Pods-IdleTimer_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 99F8FAECFB4D677219B4840EC4779917 /* Pods-IdleTimer_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		93D506576E89224B7358FD0017549D20 /* IdleTimer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 10DA5E1C2C2100AF5A3103C2F3F9F934 /* IdleTimer-dummy.m */; };
 		DBEBF5B58E9CB42117293A80EBD25DE0 /* IdleTimer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AE109D61DA0132FC66BAAE6D1C99C9B6 /* IdleTimer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DC50031E752D1D2172E82FC14CB3BF38 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		EFE31F290515C64AFE0A3043BECEBBE7 /* Pods-IdleTimer_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAED263E7B2BC089F5F6551245B8E7E /* Pods-IdleTimer_Example-dummy.m */; };
-		F4C2247AC5B829AF2DE4738FD286F67E /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C523CF17C62BB0E718A3EA30D63007 /* ReplaceMe.swift */; };
 		F4FB5C0F18E28A017CDE32B83DEF451A /* Pods-IdleTimer_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DBFEFC80FEC97F79BD1B296A589391 /* Pods-IdleTimer_Tests-dummy.m */; };
 /* End PBXBuildFile section */
 
@@ -40,10 +40,10 @@
 		36F46E7A799370B714AE9CE176301831 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		381130453CDB7524729B0FC149C24745 /* Pods-IdleTimer_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IdleTimer_Example.release.xcconfig"; sourceTree = "<group>"; };
 		42DBFEFC80FEC97F79BD1B296A589391 /* Pods-IdleTimer_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-IdleTimer_Tests-dummy.m"; sourceTree = "<group>"; };
-		45C523CF17C62BB0E718A3EA30D63007 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
 		46BE4798A6928430F1F21BF11EFEF4C6 /* IdleTimer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = IdleTimer.modulemap; sourceTree = "<group>"; };
 		47DACCB9AEC3771770D06A27F7E4C553 /* Pods_IdleTimer_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IdleTimer_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		48AD9AD1194F77EA369411B350D33BBA /* IdleTimer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IdleTimer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		513FD8911E39D03D00ADEC31 /* IdleTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdleTimer.swift; sourceTree = "<group>"; };
 		5E89570CE051BC99DB65932945FB1730 /* Pods-IdleTimer_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-IdleTimer_Example-resources.sh"; sourceTree = "<group>"; };
 		689D884D15B203F4ABEE29A825348F28 /* Pods-IdleTimer_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-IdleTimer_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		6F2798A68F8A02A48C91A07C5493EE5B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -136,7 +136,7 @@
 		537A2393F9B397A6F05AE0A46815B5C0 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				45C523CF17C62BB0E718A3EA30D63007 /* ReplaceMe.swift */,
+				513FD8911E39D03D00ADEC31 /* IdleTimer.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -362,7 +362,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				93D506576E89224B7358FD0017549D20 /* IdleTimer-dummy.m in Sources */,
-				F4C2247AC5B829AF2DE4738FD286F67E /* ReplaceMe.swift in Sources */,
+				513FD8921E39D03D00ADEC31 /* IdleTimer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
