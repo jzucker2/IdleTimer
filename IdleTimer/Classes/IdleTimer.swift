@@ -20,7 +20,6 @@ enum ScreenState: Int {
     case awake
     case sleepy
     
-    
     static var allStates: [ScreenState] {
         return [.awake, .sleepy]
     }
@@ -39,7 +38,6 @@ enum ScreenState: Int {
             return state.title == string
         })
     }
-    
     
     func setIdleTimer() {
         let idleTimerState = isIdleTimerDisabled
@@ -102,7 +100,6 @@ extension UIAlertController {
             idleTimer.screenState = newState
         }
         func alertAction(for state: ScreenState) -> UIAlertAction {
-            
             return UIAlertAction(title: state.title, style: .default, handler: alertActionHandler)
         }
         
