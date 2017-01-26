@@ -101,6 +101,11 @@ public class IdleTimer: NSObject {
             UserDefaults.standard.set(screenState.rawValue, forKey: ScreenStateKey)
         }
     }
+    
+    public func switchScreenState() -> ScreenState {
+        screenState = screenState.oppositeState
+        return screenState
+    }
 
 }
 
