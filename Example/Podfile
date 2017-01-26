@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'IdleTimer_Example' do
+  pod 'IdleTimer', :path => '../'
+
+  target 'IdleTimer_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
