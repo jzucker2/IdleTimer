@@ -1,0 +1,6 @@
+framework module IdleTimer {
+  umbrella header "IdleTimer-umbrella.h"
+
+  export *
+  module * { export * }
+}
