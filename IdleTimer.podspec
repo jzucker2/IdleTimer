@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 This is a class to consolidate and manipulate the Idle Timer on iOS. The double negatives make manipulating the idle timer for iOS applications confusing. This helps track the value and manipulate it easily.
                        DESC
 
-  s.homepage         = 'https://github.com/<GITHUB_USERNAME>/IdleTimer'
+  s.homepage         = 'https://github.com/jzucker2/IdleTimer'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Jordan Zucker' => 'jordan.zucker@gmail.com' }
-  s.source           = { :git => 'https://github.com/<GITHUB_USERNAME>/IdleTimer.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/jzucker2/IdleTimer.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/jzucker'
 
   s.ios.deployment_target = '8.0'
@@ -37,6 +37,6 @@ This is a class to consolidate and manipulate the Idle Timer on iOS. The double 
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  s.frameworks = 'UIKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
