@@ -24,7 +24,7 @@ public enum ScreenState: Int {
         return [.awake, .sleepy]
     }
     
-    var title: String {
+    public var title: String {
         switch self {
         case .awake:
             return "Awake"
@@ -39,9 +39,10 @@ public enum ScreenState: Int {
         })
     }
     
-    func setIdleTimer() {
+    public func setIdleTimer() {
         let idleTimerState = isIdleTimerDisabled
         UIApplication.shared.isIdleTimerDisabled = idleTimerState
+        print("UIApplication.shared.isIdleTimerDisabled = \(UIApplication.shared.isIdleTimerDisabled)")
     }
     
     var isIdleTimerDisabled: Bool {
@@ -61,10 +62,13 @@ public extension Notification.Name {
 @objc
 public class IdleTimer: NSObject {
     
+    
+    private let defaultScreenState = ScreenState.sleepy
+    
     static let IdleTimerNotificationAwakeCurrentStateKey = "UpdatedIdleTimerStateKey"
     static let IdleTimerNotificationAwakeOldStateKey = "OldIdleTimerStateKey"
     
-    static let sharedInstance = IdleTimer()
+    public static let sharedInstance = IdleTimer()
     
     private var listeners: [IdleTimerListener] = [IdleTimerListener]()
     
@@ -75,13 +79,16 @@ public class IdleTimer: NSObject {
             }
             self.screenState = actualState
         } else {
-            self.screenState = ScreenState.awake
+            self.screenState = defaultScreenState
+            UserDefaults.standard.set(defaultScreenState.rawValue, forKey: ScreenStateKey)
         }
         super.init()
+        screenState.setIdleTimer()
     }
     
-    dynamic var screenState: ScreenState {
+    public dynamic var screenState: ScreenState {
         didSet {
+            screenState.setIdleTimer()
             UserDefaults.standard.set(screenState.rawValue, forKey: ScreenStateKey)
         }
     }
