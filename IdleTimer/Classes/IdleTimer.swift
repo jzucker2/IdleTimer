@@ -33,6 +33,15 @@ public enum ScreenState: Int {
         }
     }
     
+    public var oppositeState: ScreenState {
+        switch self {
+        case .awake:
+            return .sleepy
+        case .sleepy:
+            return .awake
+        }
+    }
+    
     static func screenState(for string: String) -> ScreenState? {
         return allStates.first(where: { (state) -> Bool in
             return state.title == string
