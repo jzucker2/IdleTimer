@@ -11,12 +11,12 @@ import UIKit
 fileprivate let IsAwakeKey = "IsAwakeKey"
 fileprivate let ScreenStateKey = "ScreenStateKey"
 
-protocol IdleTimerListener {
+public protocol IdleTimerListener {
     func idleTimer(timer: IdleTimer, didUpdateState: Bool)
 }
 
 @objc
-enum ScreenState: Int {
+public enum ScreenState: Int {
     case awake
     case sleepy
     
@@ -54,12 +54,12 @@ enum ScreenState: Int {
     }
 }
 
-extension Notification.Name {
+public extension Notification.Name {
     static let IdleTimerDidChange: Notification.Name = Notification.Name("IdleTimerDidChange")
 }
 
 @objc
-class IdleTimer: NSObject {
+public class IdleTimer: NSObject {
     
     static let IdleTimerNotificationAwakeCurrentStateKey = "UpdatedIdleTimerStateKey"
     static let IdleTimerNotificationAwakeOldStateKey = "OldIdleTimerStateKey"
@@ -88,9 +88,9 @@ class IdleTimer: NSObject {
 
 }
 
-extension UIAlertController {
+public extension UIAlertController {
     
-    static func idleTimerDurationAlertController(idleTimer: IdleTimer) -> UIAlertController {
+    public static func idleTimerDurationAlertController(idleTimer: IdleTimer) -> UIAlertController {
         let alertController = UIAlertController(title: "Awake duration", message: "Choose a duration to keep the screen awake", preferredStyle: .actionSheet)
         
         let alertActionHandler: (UIAlertAction) -> Void = { (alertAction) in
