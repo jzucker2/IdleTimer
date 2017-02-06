@@ -90,7 +90,8 @@ open class IdleTimer: NSObject {
             }
             self.screenState = actualState
         } else {
-            let defaultState = IdleTimer.defaultScreenState
+            // so that we take subclassing into account
+            let defaultState = type(of: self).defaultScreenState
             self.screenState = defaultState
             UserDefaults.standard.set(defaultState.rawValue, forKey: ScreenStateKey)
         }
