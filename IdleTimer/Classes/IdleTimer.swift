@@ -20,7 +20,7 @@ public enum ScreenState: Int {
     case awake
     case sleepy
     
-    static var allStates: [ScreenState] {
+    public static var allStates: [ScreenState] {
         return [.awake, .sleepy]
     }
     
@@ -42,7 +42,7 @@ public enum ScreenState: Int {
         }
     }
     
-    static func screenState(for string: String) -> ScreenState? {
+    public static func screenState(for string: String) -> ScreenState? {
         return allStates.first(where: { (state) -> Bool in
             return state.title == string
         })
@@ -69,7 +69,7 @@ public extension Notification.Name {
 }
 
 @objc
-public class IdleTimer: NSObject {
+open class IdleTimer: NSObject {
     
     
     open class var defaultScreenState: ScreenState {
@@ -83,7 +83,7 @@ public class IdleTimer: NSObject {
     
     private var listeners: [IdleTimerListener] = [IdleTimerListener]()
     
-    override init() {
+    public override init() {
         if let existingState = UserDefaults.standard.object(forKey: ScreenStateKey) {
             guard let intState = existingState as? Int, let actualState = ScreenState(rawValue: intState) else {
                 fatalError("What happened, existingState: \(existingState)")
@@ -105,7 +105,7 @@ public class IdleTimer: NSObject {
         }
     }
     
-    public func switchScreenState() -> ScreenState {
+    open func switchScreenState() -> ScreenState {
         screenState = screenState.oppositeState
         return screenState
     }
