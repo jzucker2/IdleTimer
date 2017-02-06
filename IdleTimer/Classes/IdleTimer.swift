@@ -105,6 +105,10 @@ open class IdleTimer: NSObject {
         }
     }
     
+    open var currentScreenStateTitle: String {
+        return screenState.title
+    }
+    
     open func switchScreenState() -> ScreenState {
         screenState = screenState.oppositeState
         return screenState
