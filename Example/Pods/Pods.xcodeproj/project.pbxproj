@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		3B05FC60741E3282B73CFD83F8CFDDBB /* Pods-IdleTimer_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D2024178F83EE1A4EA788B8C03670DC8 /* Pods-IdleTimer_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		44564098663CFF59540E5B6EB1797F6E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		513FD8921E39D03D00ADEC31 /* IdleTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513FD8911E39D03D00ADEC31 /* IdleTimer.swift */; };
-		653E5EC9833A840275D6568C64E3585E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		44564098663CFF59540E5B6EB1797F6E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		4B4C4AC9F263A763B0577EC689215EC7 /* IdleTimer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 10DA5E1C2C2100AF5A3103C2F3F9F934 /* IdleTimer-dummy.m */; };
+		597914DCF875251AA0B3D2A2140C8F7E /* IdleTimer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AE109D61DA0132FC66BAAE6D1C99C9B6 /* IdleTimer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		81DF8D3910212CE80B75F35D15428779 /* Pods-IdleTimer_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 99F8FAECFB4D677219B4840EC4779917 /* Pods-IdleTimer_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		93D506576E89224B7358FD0017549D20 /* IdleTimer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 10DA5E1C2C2100AF5A3103C2F3F9F934 /* IdleTimer-dummy.m */; };
-		DBEBF5B58E9CB42117293A80EBD25DE0 /* IdleTimer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AE109D61DA0132FC66BAAE6D1C99C9B6 /* IdleTimer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DC50031E752D1D2172E82FC14CB3BF38 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		941169A0C1AAA7384F1E7626D4177AD5 /* IdleTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2E668D921B97BF3ECB95B11FFCA096 /* IdleTimer.swift */; };
+		A5D6250AAF5C309EAD9E17658407C194 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */; };
+		DC50031E752D1D2172E82FC14CB3BF38 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		E07FD2738E71CC3D3AB34BF9EF645361 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
 		EFE31F290515C64AFE0A3043BECEBBE7 /* Pods-IdleTimer_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAED263E7B2BC089F5F6551245B8E7E /* Pods-IdleTimer_Example-dummy.m */; };
 		F4FB5C0F18E28A017CDE32B83DEF451A /* Pods-IdleTimer_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DBFEFC80FEC97F79BD1B296A589391 /* Pods-IdleTimer_Tests-dummy.m */; };
 /* End PBXBuildFile section */
@@ -24,7 +25,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8B9ABFBC3F6125FD994F4E113963EE20;
+			remoteGlobalIDString = 17382C1AAFB06E59FE157E3A632B494B;
 			remoteInfo = IdleTimer;
 		};
 /* End PBXContainerItemProxy section */
@@ -33,24 +34,25 @@
 		10DA5E1C2C2100AF5A3103C2F3F9F934 /* IdleTimer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IdleTimer-dummy.m"; sourceTree = "<group>"; };
 		1E798B8406D2F06A3684A7850057A5CF /* IdleTimer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IdleTimer-prefix.pch"; sourceTree = "<group>"; };
 		281C4ED6A744FA6BBC30EDCADA3A408F /* Pods-IdleTimer_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-IdleTimer_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		2C357B7E11901AB404E8A120A9F4606B /* Pods-IdleTimer_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-IdleTimer_Example.modulemap"; sourceTree = "<group>"; };
-		2D728E0732743BE323F2AF375F7CC127 /* Pods-IdleTimer_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-IdleTimer_Tests.modulemap"; sourceTree = "<group>"; };
+		2C357B7E11901AB404E8A120A9F4606B /* Pods-IdleTimer_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-IdleTimer_Example.modulemap"; sourceTree = "<group>"; };
+		2D728E0732743BE323F2AF375F7CC127 /* Pods-IdleTimer_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-IdleTimer_Tests.modulemap"; sourceTree = "<group>"; };
 		3335D782DD3AAF6FB4697C1310941A7E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		35C824CACA2C1A9565B922345FCC6F52 /* Pods-IdleTimer_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IdleTimer_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		36F46E7A799370B714AE9CE176301831 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		381130453CDB7524729B0FC149C24745 /* Pods-IdleTimer_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IdleTimer_Example.release.xcconfig"; sourceTree = "<group>"; };
 		42DBFEFC80FEC97F79BD1B296A589391 /* Pods-IdleTimer_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-IdleTimer_Tests-dummy.m"; sourceTree = "<group>"; };
-		46BE4798A6928430F1F21BF11EFEF4C6 /* IdleTimer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = IdleTimer.modulemap; sourceTree = "<group>"; };
-		47DACCB9AEC3771770D06A27F7E4C553 /* Pods_IdleTimer_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IdleTimer_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		48AD9AD1194F77EA369411B350D33BBA /* IdleTimer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IdleTimer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		513FD8911E39D03D00ADEC31 /* IdleTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdleTimer.swift; sourceTree = "<group>"; };
+		46BE4798A6928430F1F21BF11EFEF4C6 /* IdleTimer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = IdleTimer.modulemap; sourceTree = "<group>"; };
+		47DACCB9AEC3771770D06A27F7E4C553 /* Pods_IdleTimer_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_IdleTimer_Example.framework; path = "Pods-IdleTimer_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		48AD9AD1194F77EA369411B350D33BBA /* IdleTimer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = IdleTimer.framework; path = IdleTimer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E89570CE051BC99DB65932945FB1730 /* Pods-IdleTimer_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-IdleTimer_Example-resources.sh"; sourceTree = "<group>"; };
+		616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		689D884D15B203F4ABEE29A825348F28 /* Pods-IdleTimer_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-IdleTimer_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		6F2798A68F8A02A48C91A07C5493EE5B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		73120CB95B0129AC3F34AC2A9836B7F2 /* Pods-IdleTimer_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-IdleTimer_Example-frameworks.sh"; sourceTree = "<group>"; };
 		7B85D03938CFA02A5965ED9898C6FE15 /* Pods-IdleTimer_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IdleTimer_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		816F0D86B8E109C2505FC94C9F3F436F /* Pods-IdleTimer_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-IdleTimer_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		93F846336A0EBF04EE41889693B38CA7 /* Pods-IdleTimer_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IdleTimer_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		99F8FAECFB4D677219B4840EC4779917 /* Pods-IdleTimer_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-IdleTimer_Example-umbrella.h"; sourceTree = "<group>"; };
 		9FC15FAED60F0D9561C619C16EB81129 /* Pods-IdleTimer_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-IdleTimer_Tests-resources.sh"; sourceTree = "<group>"; };
@@ -58,9 +60,9 @@
 		ABAED263E7B2BC089F5F6551245B8E7E /* Pods-IdleTimer_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-IdleTimer_Example-dummy.m"; sourceTree = "<group>"; };
 		AE109D61DA0132FC66BAAE6D1C99C9B6 /* IdleTimer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IdleTimer-umbrella.h"; sourceTree = "<group>"; };
 		B644D87DCB0E2B2E0A7CA6AC6BF23A2B /* Pods-IdleTimer_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IdleTimer_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		C65EBC4D283E542429DCDF9E91462D2E /* Pods_IdleTimer_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IdleTimer_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		C65EBC4D283E542429DCDF9E91462D2E /* Pods_IdleTimer_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_IdleTimer_Tests.framework; path = "Pods-IdleTimer_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2024178F83EE1A4EA788B8C03670DC8 /* Pods-IdleTimer_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-IdleTimer_Tests-umbrella.h"; sourceTree = "<group>"; };
+		ED2E668D921B97BF3ECB95B11FFCA096 /* IdleTimer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IdleTimer.swift; sourceTree = "<group>"; };
 		FF337C7B7E1055406A55CADD5F9B27D1 /* Pods-IdleTimer_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IdleTimer_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,11 +83,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EA1250C1301628E2C4261A34D877C3F0 /* Frameworks */ = {
+		E183CB35449FFC7A158D2DDBA23B7265 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				653E5EC9833A840275D6568C64E3585E /* Foundation.framework in Frameworks */,
+				E07FD2738E71CC3D3AB34BF9EF645361 /* Foundation.framework in Frameworks */,
+				A5D6250AAF5C309EAD9E17658407C194 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,8 +122,9 @@
 		21E57008BDCC47898AA15DF1A39B012E /* IdleTimer */ = {
 			isa = PBXGroup;
 			children = (
-				537A2393F9B397A6F05AE0A46815B5C0 /* Classes */,
+				CC3C35615F01E141F2981F17A2C544E2 /* Classes */,
 			);
+			name = IdleTimer;
 			path = IdleTimer;
 			sourceTree = "<group>";
 		};
@@ -133,12 +137,12 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		537A2393F9B397A6F05AE0A46815B5C0 /* Classes */ = {
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				513FD8911E39D03D00ADEC31 /* IdleTimer.swift */,
+				E6EE98446B568159EE277B68FD442AF0 /* iOS */,
 			);
-			path = Classes;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		7044C34C357614401C8BB0CDBDF8FD95 /* Pods-IdleTimer_Tests */ = {
@@ -159,20 +163,12 @@
 			path = "Target Support Files/Pods-IdleTimer_Tests";
 			sourceTree = "<group>";
 		};
-		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				9DA171132536C29125EFD793608C559E /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
 				FC923F7B2C65D8797E91B0CCF7A3A021 /* Products */,
 				2631082B759B6CCEC58D1931D8F3F897 /* Targets Support Files */,
 			);
@@ -184,14 +180,6 @@
 				01F89BBC7A9F02FE00347C4C0E472542 /* IdleTimer */,
 			);
 			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		C22267358D13CAA6D79E710B145D92F3 /* Pods-IdleTimer_Example */ = {
@@ -212,6 +200,24 @@
 			path = "Target Support Files/Pods-IdleTimer_Example";
 			sourceTree = "<group>";
 		};
+		CC3C35615F01E141F2981F17A2C544E2 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				ED2E668D921B97BF3ECB95B11FFCA096 /* IdleTimer.swift */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		E6EE98446B568159EE277B68FD442AF0 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */,
+				7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
 		FC923F7B2C65D8797E91B0CCF7A3A021 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -225,19 +231,19 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		4A2EA3D6EB15B8CF074E8C5D4B643762 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				597914DCF875251AA0B3D2A2140C8F7E /* IdleTimer-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		80A424EC64780180F1E254E1AE7DC0FD /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				81DF8D3910212CE80B75F35D15428779 /* Pods-IdleTimer_Example-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9CE70E994A7A6AEDB431E1AECF69DA1D /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DBEBF5B58E9CB42117293A80EBD25DE0 /* IdleTimer-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +258,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		17382C1AAFB06E59FE157E3A632B494B /* IdleTimer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CDC54DA7F5EFC5ED2F1097641C4AB00 /* Build configuration list for PBXNativeTarget "IdleTimer" */;
+			buildPhases = (
+				B23B39147D70EEBBAF72E297FDCD3587 /* Sources */,
+				E183CB35449FFC7A158D2DDBA23B7265 /* Frameworks */,
+				4A2EA3D6EB15B8CF074E8C5D4B643762 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IdleTimer;
+			productName = IdleTimer;
+			productReference = 48AD9AD1194F77EA369411B350D33BBA /* IdleTimer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		3556B8F7CB568AE23CE4E53F8A8A62A3 /* Pods-IdleTimer_Tests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 367F537AB3BD3DB9C2FB92A1435E2CD3 /* Build configuration list for PBXNativeTarget "Pods-IdleTimer_Tests" */;
@@ -267,23 +290,6 @@
 			name = "Pods-IdleTimer_Tests";
 			productName = "Pods-IdleTimer_Tests";
 			productReference = C65EBC4D283E542429DCDF9E91462D2E /* Pods_IdleTimer_Tests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		8B9ABFBC3F6125FD994F4E113963EE20 /* IdleTimer */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0331876148EC16202E6F944A0638CFE5 /* Build configuration list for PBXNativeTarget "IdleTimer" */;
-			buildPhases = (
-				7663358DCC5088E620E461631BC87F70 /* Sources */,
-				EA1250C1301628E2C4261A34D877C3F0 /* Frameworks */,
-				9CE70E994A7A6AEDB431E1AECF69DA1D /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = IdleTimer;
-			productName = IdleTimer;
-			productReference = 48AD9AD1194F77EA369411B350D33BBA /* IdleTimer.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		A7B8F23D52EC93D6245C735B7A030AAE /* Pods-IdleTimer_Example */ = {
@@ -312,14 +318,6 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
-				TargetAttributes = {
-					8B9ABFBC3F6125FD994F4E113963EE20 = {
-						LastSwiftMigration = 0820;
-					};
-					A7B8F23D52EC93D6245C735B7A030AAE = {
-						LastSwiftMigration = 0820;
-					};
-				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -333,7 +331,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8B9ABFBC3F6125FD994F4E113963EE20 /* IdleTimer */,
+				17382C1AAFB06E59FE157E3A632B494B /* IdleTimer */,
 				A7B8F23D52EC93D6245C735B7A030AAE /* Pods-IdleTimer_Example */,
 				3556B8F7CB568AE23CE4E53F8A8A62A3 /* Pods-IdleTimer_Tests */,
 			);
@@ -357,12 +355,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7663358DCC5088E620E461631BC87F70 /* Sources */ = {
+		B23B39147D70EEBBAF72E297FDCD3587 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93D506576E89224B7358FD0017549D20 /* IdleTimer-dummy.m in Sources */,
-				513FD8921E39D03D00ADEC31 /* IdleTimer.swift in Sources */,
+				4B4C4AC9F263A763B0577EC689215EC7 /* IdleTimer-dummy.m in Sources */,
+				941169A0C1AAA7384F1E7626D4177AD5 /* IdleTimer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,7 +370,7 @@
 		001D884499F9A6A35B8CF2620E74019B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = IdleTimer;
-			target = 8B9ABFBC3F6125FD994F4E113963EE20 /* IdleTimer */;
+			target = 17382C1AAFB06E59FE157E3A632B494B /* IdleTimer */;
 			targetProxy = B797DE915FC71B0B16CAF343C69FAF6E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -413,7 +411,7 @@
 			};
 			name = Release;
 		};
-		297D6437AB89B067D3D752126C7EEE4F /* Release */ = {
+		54CF76A5F4F929C28E532E2EDBE1FC5E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A7C1A9D5370F524753415548334B5EAA /* IdleTimer.xcconfig */;
 			buildSettings = {
@@ -421,7 +419,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -434,16 +432,17 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/IdleTimer/IdleTimer.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = IdleTimer;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		6842F6435F12C40651B8DEDD0E6E4FA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -593,14 +592,13 @@
 				PRODUCT_NAME = Pods_IdleTimer_Example;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		E5B694E19CF7EB669495C0373BBD062D /* Debug */ = {
+		DEB43876EB75AE637F725D41859BB5AC /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A7C1A9D5370F524753415548334B5EAA /* IdleTimer.xcconfig */;
 			buildSettings = {
@@ -608,7 +606,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -621,17 +619,16 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/IdleTimer/IdleTimer.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = IdleTimer;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		EB0AE9DBBD1E68519B5E9D7EEC89FBA0 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -663,7 +660,6 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -673,20 +669,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0331876148EC16202E6F944A0638CFE5 /* Build configuration list for PBXNativeTarget "IdleTimer" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E5B694E19CF7EB669495C0373BBD062D /* Debug */,
-				297D6437AB89B067D3D752126C7EEE4F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		0DD959495B2B8A3C74823B5D2E09AF1B /* Build configuration list for PBXNativeTarget "Pods-IdleTimer_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EB0AE9DBBD1E68519B5E9D7EEC89FBA0 /* Debug */,
 				9EEA056014DDAE1E606BD705DEDFB5D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CDC54DA7F5EFC5ED2F1097641C4AB00 /* Build configuration list for PBXNativeTarget "IdleTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54CF76A5F4F929C28E532E2EDBE1FC5E /* Debug */,
+				DEB43876EB75AE637F725D41859BB5AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

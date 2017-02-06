@@ -72,7 +72,9 @@ public extension Notification.Name {
 public class IdleTimer: NSObject {
     
     
-    private let defaultScreenState = ScreenState.sleepy
+    open class var defaultScreenState: ScreenState {
+        return ScreenState.sleepy
+    }
     
     static let IdleTimerNotificationAwakeCurrentStateKey = "UpdatedIdleTimerStateKey"
     static let IdleTimerNotificationAwakeOldStateKey = "OldIdleTimerStateKey"
@@ -88,8 +90,9 @@ public class IdleTimer: NSObject {
             }
             self.screenState = actualState
         } else {
-            self.screenState = defaultScreenState
-            UserDefaults.standard.set(defaultScreenState.rawValue, forKey: ScreenStateKey)
+            let defaultState = IdleTimer.defaultScreenState
+            self.screenState = defaultState
+            UserDefaults.standard.set(defaultState.rawValue, forKey: ScreenStateKey)
         }
         super.init()
         screenState.setIdleTimer()
