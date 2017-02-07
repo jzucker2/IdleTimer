@@ -10,6 +10,7 @@ import UIKit
 
 fileprivate let IsAwakeKey = "IsAwakeKey"
 fileprivate let ScreenStateKey = "ScreenStateKey"
+fileprivate let IsEnabledKey = "IsEnabledKey"
 
 public protocol IdleTimerListener {
     func idleTimer(timer: IdleTimer, didUpdateState: Bool)
@@ -76,6 +77,10 @@ open class IdleTimer: NSObject {
         return ScreenState.sleepy
     }
     
+    open class var isEnabledByDefault: Bool {
+        return false
+    }
+    
     static let IdleTimerNotificationAwakeCurrentStateKey = "UpdatedIdleTimerStateKey"
     static let IdleTimerNotificationAwakeOldStateKey = "OldIdleTimerStateKey"
     
@@ -95,13 +100,31 @@ open class IdleTimer: NSObject {
             self.screenState = defaultState
             UserDefaults.standard.set(defaultState.rawValue, forKey: ScreenStateKey)
         }
+        if let existingIsEnabled = UserDefaults.standard.object(forKey: IsEnabledKey) {
+            guard let boolEnabled = existingIsEnabled as? Bool else {
+                fatalError("How did we get the wrong object in this key? key: \(IsEnabledKey), value: \(existingIsEnabled)")
+            }
+            self.isEnabled = boolEnabled
+        } else {
+            let defaultIsEnabled = type(of: self).isEnabledByDefault
+            self.isEnabled = defaultIsEnabled
+            UserDefaults.standard.set(defaultIsEnabled, forKey: IsEnabledKey)
+        }
         super.init()
-        screenState.setIdleTimer()
+        if isEnabled {
+            screenState.setIdleTimer()
+        } else {
+            print("IdleTimer is initially disabled")
+        }
     }
     
     public dynamic var screenState: ScreenState {
         didSet {
-            screenState.setIdleTimer()
+            if isEnabled {
+                screenState.setIdleTimer()
+            } else {
+                print("IdleTimer is disabled, saving state anyways")
+            }
             UserDefaults.standard.set(screenState.rawValue, forKey: ScreenStateKey)
         }
     }
@@ -111,12 +134,32 @@ open class IdleTimer: NSObject {
     }
     
     open func setIdleTimerForCurrentScreenState() {
+        guard isEnabled else {
+            print("IdleTimer is disabled")
+            return
+        }
         screenState.setIdleTimer()
     }
     
-    open func switchScreenState() -> ScreenState {
+    open func switchScreenState() -> ScreenState? {
+        guard isEnabled else {
+            print("IdleTimer is disabled")
+            return nil
+        }
         screenState = screenState.oppositeState
         return screenState
+    }
+    
+    open dynamic var isEnabled: Bool {
+        didSet {
+            switch isEnabled {
+            case true:
+                setIdleTimerForCurrentScreenState()
+            case false:
+                ScreenState.sleepy.setIdleTimer()
+            }
+            UserDefaults.standard.set(isEnabled, forKey: IsEnabledKey)
+        }
     }
 
 }

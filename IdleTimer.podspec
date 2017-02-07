@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'IdleTimer'
-  s.version          = '0.7.0'
+  s.version          = '0.8.0'
   s.summary          = 'Easy control of UIApplication idleTimer'
 
 # This description is used to generate tags and improve search results.
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-This is a class to consolidate and manipulate the Idle Timer on iOS. The double negatives make manipulating the idle timer for iOS applications confusing. This helps track the value and manipulate it easily.
+This is a class to consolidate and manipulate the Idle Timer on iOS. The double negatives make manipulating the idle timer for iOS applications confusing. This helps track the value and manipulate it easily. It persists settings from app session to app session automatically.
                        DESC
 
   s.homepage         = 'https://github.com/jzucker2/IdleTimer'
