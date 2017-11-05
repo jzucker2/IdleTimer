@@ -118,7 +118,7 @@ open class IdleTimer: NSObject {
         }
     }
     
-    public dynamic var screenState: ScreenState {
+    @objc public dynamic var screenState: ScreenState {
         didSet {
             if isEnabled {
                 screenState.setIdleTimer()
@@ -150,7 +150,7 @@ open class IdleTimer: NSObject {
         return screenState
     }
     
-    open dynamic var isEnabled: Bool {
+    @objc open dynamic var isEnabled: Bool {
         didSet {
             switch isEnabled {
             case true:

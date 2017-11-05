@@ -1,6 +1,6 @@
 {
   "name": "IdleTimer",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "summary": "Easy control of UIApplication idleTimer",
   "description": "This is a class to consolidate and manipulate the Idle Timer on iOS. The double negatives make manipulating the idle timer for iOS applications confusing. This helps track the value and manipulate it easily. It persists settings from app session to app session automatically.",
   "homepage": "https://github.com/jzucker2/IdleTimer",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/jzucker2/IdleTimer.git",
-    "tag": "0.8.0"
+    "tag": "0.9.0"
   },
   "platforms": {
     "ios": "8.0"
