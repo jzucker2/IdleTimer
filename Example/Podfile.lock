@@ -1,5 +1,5 @@
 PODS:
-  - IdleTimer (0.9.0)
+  - IdleTimer (0.9.1)
 
 DEPENDENCIES:
   - IdleTimer (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  IdleTimer: ad34dffce5471f5f5055828ead183c9fb77537ee
+  IdleTimer: ac97d53ad0fc8df728c3411d47699ee9617888d0
 
 PODFILE CHECKSUM: d5a18efabc12a237a5e8a4b6ebc9bfce9595e3fa
 
